@@ -33,3 +33,4 @@ class Delivery {
    store.deliveries.push(this);
 }
 }
+}
