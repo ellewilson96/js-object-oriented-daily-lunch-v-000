@@ -9,3 +9,4 @@ class Neighborhood {
     this.id = ++neighborhoodId;
     store.neighborhoods.push(this);
   }
+}
