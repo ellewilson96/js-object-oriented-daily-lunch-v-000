@@ -63,6 +63,21 @@ class Meal {
    this.id = ++mealId;
    store.meals.push(this);
 }
+  deliveries(){
+    return store.deliveries.filter(delivery =>{
+      return delivery.mealId === this.id
+    })
+  }
+   customers(){
+    return this.deliveries().map(delivery => {
+      return delivery.customer()
+    })
+  }
+   static byPrice(){
+    return store.meals.sort(function(a, b){
+      return b.price - a.price;
+    })
+  }
 }
 
 let deliveryId = 0;
