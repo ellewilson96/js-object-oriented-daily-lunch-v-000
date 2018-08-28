@@ -11,6 +11,8 @@ class Neighborhood {
   }
 }
 
+let customerId = 0;
+
 class Customer {
   constructor(name){
    this.name = name;
@@ -18,6 +20,8 @@ class Customer {
    store.customers.push(this);
  }
 }
+
+let mealId = 0;
 
 class Meal {
   constructor(title, price){
@@ -27,6 +31,8 @@ class Meal {
    store.meals.push(this);
 }
 }
+
+let deliveryId = 0;
 
 class Delivery {
   constructor(meal, neighborhood, customer){
