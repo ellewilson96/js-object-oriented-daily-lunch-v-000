@@ -17,4 +17,11 @@ class Customer {
    store.customers.push(this);
 }
 
+class Meal {
+  constructor(title, price){
+   this.title = title;
+   this.price = price;
+   this.id = ++mealId;
+   store.customers.push(this);
+}
 }
