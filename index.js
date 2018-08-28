@@ -9,4 +9,12 @@ class Neighborhood {
     this.id = ++neighborhoodId;
     store.neighborhoods.push(this);
   }
+
+class Customer {
+  constructor(name){
+   this.name = name;
+   this.id = ++customerId;
+   store.customers.push(this);
+}
+
 }
